@@ -1,0 +1,14 @@
+{
+  "name": "极客商城",
+  "manifest_version": 2,
+  "version": "1.0",
+  "content_scripts": [  
+   {  
+      "matches": ["https://*.youzan.com/**"],  
+      // "matches": [ "http://*/*", "https://*/*" ],
+      "js": ["youzanyun.js"]
+      // "run_at": "document_end"
+   }
+  ],
+  "web_accessible_resources": [ "*.js"]
+}
